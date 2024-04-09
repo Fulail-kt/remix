@@ -1,0 +1,29 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+client_id = "15484ee5f9ce3cdf0b4e595fca4355ad"
+name = "sample-data"
+handle = "sample-data-4"
+application_url = "https://environmental-louisville-impressive-gossip.trycloudflare.com"
+embedded = true
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "quickstart-d7c033a6.myshopify.com"
+include_config_on_deploy = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "read_orders write_orders"
+
+[auth]
+redirect_urls = [
+  "https://environmental-louisville-impressive-gossip.trycloudflare.com/auth/callback",
+  "https://environmental-louisville-impressive-gossip.trycloudflare.com/auth/shopify/callback",
+  "https://environmental-louisville-impressive-gossip.trycloudflare.com/api/auth/callback"
+]
+
+[webhooks]
+api_version = "2024-04"
+
+[pos]
+embedded = false
